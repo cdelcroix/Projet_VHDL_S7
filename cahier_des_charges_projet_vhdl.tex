@@ -106,16 +106,16 @@
 
 \section{Explication du projet}
 
-Le but du projet est de transmettre un signal sonore, le signal à transmettre et le signal transmis n'étant pas le même.
+Le but de notre projet est de transmettre un signal sonore codée. Le "codage" étant une montée en fréquence de celui ci.
 Cela permet une transmission audible mais non compréhensible, voir une transmission inaudible en passant par de l'ultrason.
 \\\\Le projet se décompose alors en 5 étapes.
 \begin{itemize}[label=$\square$,leftmargin=* ,parsep=0cm,itemsep=0cm,topsep=0cm]
-\item 1er étape: enregistrer un signal sonore sur un micro, lequel est intégré à la carte. Le signal de départ pourrat être à terme de la voix.
-\item 2ème étape: translater en fréquence \textbf{l'ensemble} du signal. Le processus lié à cette étape est indépendant du type de signal acquit à l'étape 1.
+\item 1er étape: enregistrer un signal sonore sur un micro, lequel est intégré à la carte. Le signal de départ pourra être à terme de la voix.
+\item 2ème étape: translater en fréquence \textbf{l'ensemble} du signal pour le "coder". Le processus lié à cette étape est indépendant du type de signal acquit à l'étape 1.
 \item 3ème étape: émettre sur le haut parleur (étape 3a) et au même moment capter grâce au micro (étape 3b) le signal modifé.
-\item 4ème étape: translater en fréquence \textbf{l'ensemble} du signal.
-\item 5ème étape: emettre le signal, dans l'idéal se dernier est alors identique à celui de l'étape 1. En réalité il sera sans doute quelque peu déformé.
-
+\item 4ème étape: translater en fréquence \textbf{l'ensemble} du signal pour le "décoder".
+\item 5ème étape: émettre le signal, dans l'idéal se dernier est alors identique à celui de l'étape 1. En réalité il sera sans doute quelque peu déformé.
+\end{itemize}
 \begin{figure}[h!]
 \centerline{\includegraphics[width=20cm]{Illustrations/decoupage_etapes_1}}
 \caption{\label{Illustrations/decoupage_etapes_1} Découpage en étapes 1}
@@ -129,7 +129,7 @@ On remarque alors que les étapes 1 et 3b, 2 et 4, 3a et 5 sont similaires. Ce q
 \end{figure}
 
 
-\end{itemize}
+
 
 \section{Matériel nécessaire}
 
@@ -137,8 +137,14 @@ Dans l'idéal le projet nécessite deux cartes Nexys4, cependant nous sommes en 
 \textbf{Cependant nous allons avoir besoin d'un haut parleur, la carte n'en possédant pas en interne.}
 
 \section{Dates butoirs}
-Réalisation cahier des charges: 1ère séance
-
+\begin{itemize}[label=$\square$,leftmargin=* ,parsep=0cm,itemsep=0cm,topsep=0cm]
+\item 1ère séance: réaliser le cahier des charges.
+\item 2ème séance: développer des blocs acquisition (Charles) et émission (Adrian) en parallèle.
+\item 3ème séance: idem.
+\item 4ème séance: développement des blocs acquisition (Charles) et traitement (Adrian) en parallèle.
+\item 5ème séance: réaliser du top module et du fichier de configuration carte.
+\item 6ème séance: tests réel.
+\end{itemize}
 \section{Difficultés probables}
 Mémoire nécessaire pour enregistrement initial. Calcul de durée nécessaire.
 
